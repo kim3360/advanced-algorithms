@@ -6,9 +6,9 @@ def programstart():
 
 ## 함수들 불러서, 실행
 
- def getChangeCnt():
-    n = 1260
-    count = 0
+    def getChangeCnt():
+        n = 1260
+        count = 0
 
     array = [500, 100, 50, 10]
     for coin in array:
@@ -27,7 +27,6 @@ def getCurrentTimeStr():
     return "[" + currentTimeStr + "]"
 
 if __name__ == "__main__":
-    getChangeCnt()
     ## 현재 시간을 확인해서 시작 시간으로 저장
     start_time = datetime.now()
     ## 종료 시간 - 시작 시간을 실행 시간으로 확인
