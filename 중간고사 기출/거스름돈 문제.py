@@ -16,5 +16,19 @@ def main():
         n %= coin # 거스름돈 계산
     print(count) # 동전 개수 출력
     return count # 동전 개수 반환
+
+
+def main2():
+    n = int(input())
+    count = 0
+
+    ATM_type = [50000, 10000, 5000, 1000, 500, 100]
+
+    for ATM in ATM_type:
+        count += n // ATM
+        n %= ATM
+    print(count)
+    return count
 if __name__ == "__main__":
-    main()
+    # main()
+    main2()
